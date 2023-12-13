@@ -6,7 +6,7 @@
  *   (Usa la primera opción de cada transformación. Por ejemplo "4" para la "a")'''
 
 
-texto = input("Escribe un texto para transformar en lenguaje Hacker: ")
+texto = input("Escribe un texto para transformar en lenguaje Hacker: ").upper()
 
 dict = {"A":"4", "B":"I3", "C":"[", "D":")", "E":"3", "F":"|=", "G":"&", "H":"#", "I":"1", "J": ",_|", "K":">|", "L":"1", "M":"/\/\ ", "N":"^/", "O":"0", "P":"|*", "Q":"(_,)", "R":"I2", "S":"5", "T":"7", "U":"(_)", "V":"\/", "W":"\/\/", "X:":"><", "Y":"j", "Z":"2"}
 
@@ -17,6 +17,5 @@ for i in range(len(texto)):
         hacker += dict[texto[i]]
     else:
         hacker += texto[i]
-
 
 print(hacker)
