@@ -9,3 +9,20 @@
  */'''
 
 
+import random
+
+
+def gen_contr(long):
+    characters = list(range(33,123))
+
+    contr = ''
+
+    while len(contr) < long:
+        contr += chr(random.choice(characters))
+
+    return(contr)
+
+
+
+longitud = random.randint(8,16)
+print(gen_contr(longitud))
