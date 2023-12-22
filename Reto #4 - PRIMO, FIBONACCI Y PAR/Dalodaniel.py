@@ -6,3 +6,16 @@
  */'''
 
 
+def par (num):
+    return num % 2 == 0
+
+def primo(num):
+    for i in range(1,num):
+        if num % i == 0:
+            return True
+        
+    return False
+
+
+numero = int(input('Introduce un número: '))
+print(str(numero) + ' es primo' if primo(numero) else ' no es primo, ')
